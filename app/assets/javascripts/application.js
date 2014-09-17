@@ -39,11 +39,11 @@ projectImageUrls = [
 ];
 
 projectInfo = [
-  { name: 'AppTree', description: 'Find the best iOS apps rated by people just like you. This app was built by a team of three in about a week. Ruby on Rails server side and Backbone.js for the front end. The app runs on a single page load.' },
-  { name: 'Retreat', description: 'test retreat' },
-  { name: 'Giftr', description: 'test giftr' },
-  { name: 'WDIChattr', description: 'test wdichattr' },
-  { name: 'TicTacToe', description: 'test tictactoe' }
+  { name: 'AppTree', description: 'Find the best iOS apps rated by people just like you. Ruby on Rails server side and Backbone.js for the front end. The app runs on a single page load.', url: 'http://apptree.herokuapp.com', codeUrl: 'https://github.com/TaliaS1214/AppTree' },
+  { name: 'Retreat', description: 'If you are planning on going on a vacation, try getting ideas and itineraries from your friends. My focus was in back-end and front-end technologies like Ruby on Rails, jQuery, and AJAX.', url: 'http://boiling-headland-7736.herokuapp.com/', codeUrl: 'https://github.com/ericfrommelt/retreat_app'},
+  { name: 'Giftr', description: 'Sometimes it\'s hard finding the perfect gift for someone. A social site built around gifting might help solve this problem. This app was my first dive into making a Ruby on Rails app!', url: 'http://giftingapp.herokuapp.com', codeUrl: 'https://github.com/truotaku/giftr_app' },
+  { name: 'WDIChattr', description: 'My first attempt at learning about web sockets. I built this application using Node.js, Express, and Socket.IO.', url: 'http://wdichattr.herokuapp.com', codeUrl: 'https://github.com/truotaku/learning_websockets' },
+  { name: 'TicTacToe', description: 'Tic Tac Toe! I wanted to put my newfound abilities to the test by creating a small front-front end game. Javascript and jQuery were used for the logic.', url: 'http://playttt.bitballoon.com', codeUrl: 'https://github.com/truotaku/tictactoe' }
 ];
 
 
@@ -59,6 +59,8 @@ function addInitialProjectImages(imageCount) {
   $projectsDiv.find('li').first().addClass('white-background');
   $('#project-name').html(projectInfo[0].name);
   $('#project-description').html(projectInfo[0].description);
+  $('#project-website-link').attr('href', projectInfo[0].url);
+  $('#project-code-link').attr('href', projectInfo[0].codeUrl);
 }
 
 function showStack() {
@@ -112,6 +114,8 @@ function changeProjectInfo() {
   $('#project-info').children().fadeOut(250, function() {
     $('#project-name').html(projectInfo[index].name);
     $('#project-description').html(projectInfo[index].description);
+    $('#project-website-link').attr('href', projectInfo[index].url);
+    $('#project-code-link').attr('href', projectInfo[index].codeUrl);
     $(this).fadeIn(250);
   });
 }
