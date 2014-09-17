@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NajeeGardner</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>Najee Gardner</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <nav id="main-menu">
+    <a href="#top">NG</a>
+    <a href="#about-me-fragment">About Me</a>
+    <a href="#projects-fragment">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <div class="background-image">
+    <div id="header-text" style="overflow: hidden">
+      <h1 id="main-title-job">FULL STACK WEB DEV</h1>
+      <h1 id="main-title-name">NAJEE GARDNER |</h1>
+    </div>
+  </div>
+
+  <div id="about-me-fragment"></div>
+
+  <div id="about-me">
+    <div></div>
+    <img src="assets/najee.jpg" />
+    <p>
+      Hey! I'm a Full-Stack Web Developer based in New York City.
+      I love building great web apps from from the ground up
+      to be efficient and scalable almost as much as I love Disney World!
+    </p>
+  </div>
+
+  <div id="my-stack">
+    <div id="front-end" class="stack">
+      <h2>Front-End</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>AJAX</li>
+        <li>Backbone.js</li>
+      </ul>
+    </div>
+    <div id="back-end" class="stack">
+      <h2>Back-End</h2>
+      <ul>
+        <li>Ruby</li>
+        <li>Ruby on Rails</li>
+        <li>PostgreSQL</li>
+        <li>Sinatra</li>
+        <li>Node.js and Express</li>
+        <li>APIs</li>
+        <li>Socket.IO</li>
+      </ul>
+    </div>
+    <div id="other" class="stack">
+      <h2>Other</h2>
+      <ul>
+        <li>Git and Github</li>
+        <li>Agile Methodologies</li>
+        <li>Test Driven Development</li>
+        <li>Object Oriented Design</li>
+        <li>REST</li>
+        <li>Heroku</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="projects-fragment"></div>
+
+  <div id="projects">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <p class="arrow right">></p>
+    <div id="images"></div>
+    <div id="project-info">
+      <h2 id="project-name"></h2>
+      <p id="project-description"></p>
+    </div>
+  </div>
 </body>
 </html>
