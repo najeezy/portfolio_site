@@ -24,8 +24,8 @@
 
 $(function() {
   addInitialProjectImages(carouselStackSize);
-  $('#images').hover(showStack, hideStack);
-  $('#images').click(viewNextItem);
+  $('#carousel').hover(showStack, hideStack);
+  $('#carousel').on('click', '.arrow.right', viewNextItem);
 });
 
 carouselStackSize = 3;
@@ -64,14 +64,15 @@ function addInitialProjectImages(imageCount) {
 }
 
 function showStack() {
+  var $images = $('#images');
   var topValue = 0;
   var widthValue = 0;
   var leftValue = 0;
-  $('.arrow').fadeIn(400);
+  $('.arrow').animate({ opacity: 0.5 });
 
   // get the reverse order of the jquery array and
   // iterate over it
-  $($(this).children().get().reverse()).each(function() {
+  $($images.children().get().reverse()).each(function() {
     $(this).animate({
       top: topValue,
       width: '-='+ widthValue,
@@ -85,10 +86,12 @@ function showStack() {
 }
 
 function hideStack() {
-  $($(this).children().get().reverse()).each(function(index) {
+  var $images = $('#images');
+  $('.arrow').animate({ opacity: 0 }, 300);
+
+  $($images.children().get().reverse()).each(function(index) {
     var widthValue = index * 20;
     var leftValue = index * 10;
-    $('.arrow').fadeOut(400);
 
     $(this).animate({
       top: 0,
