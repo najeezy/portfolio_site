@@ -310,29 +310,27 @@ nav#main-menu {
 
 		.arrow {
 			text-align: center;
-			height: 100px;
-			width: 100px;
 			position: relative;
 			font-size: 75px;
 			color: white;
+			height: 0;
+			width: 0;
 			left: 50%;
 			margin-left: 390px;
 			z-index: 10;
-			font-weight: lighter;
-			background: gray;
 			opacity: 0;
 			color: black;
-			font-family: 'Helvetica Neue' helvetica;
-			border-radius: 15px;
 			cursor: pointer;
-			transition: background 0.3s, color 0.3s, opacity 0.3s;
+			border: 70px solid transparent;
+			border-left: 30px solid white;
+			transition: border-color 0.3s, color 0.3s, opacity 0.3s;
 
 			&.right {
-				margin-top: -355px;
+				margin-top: -375px;
 			}
 
 			&:hover {
-				background: #FF4241;
+				border-left-color: #FF4241;
 				color: white;
 				opacity: 1;
 			}
