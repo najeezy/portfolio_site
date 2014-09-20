@@ -112,7 +112,7 @@ function viewNextItem() {
 
 function changeProjectInfo() {
   var $images = $('#images').children();
-  var index = $images.eq($images.length - 2).data('index');
+  var index = $images.first().data('index');
 
   $('#project-info').children().fadeOut(250, function() {
     $('#project-name').html(projectInfo[index].name);
@@ -172,7 +172,7 @@ function animateProjectImages() {
       },
       complete: function() {
         duringClick = false;
-        this.remove();
+        $(this).remove();
       }
     }
   );
