@@ -43,7 +43,7 @@ projectInfo = [
   { name: 'Retreat', description: 'If you are planning on going on a vacation, try getting ideas and itineraries from your friends. My focus was in back-end and front-end technologies like Ruby on Rails, jQuery, and AJAX.', url: 'http://boiling-headland-7736.herokuapp.com/', codeUrl: 'https://github.com/ericfrommelt/retreat_app'},
   { name: 'Giftr', description: 'Sometimes it\'s hard finding the perfect gift for someone. A social site built around gifting might help solve this problem. This app was my first dive into making a Ruby on Rails app!', url: 'http://giftingapp.herokuapp.com', codeUrl: 'https://github.com/truotaku/giftr_app' },
   { name: 'WDIChattr', description: 'My first attempt at learning about web sockets. I built this application using Node.js, Express, and Socket.IO.', url: 'http://wdichattr.herokuapp.com', codeUrl: 'https://github.com/truotaku/learning_websockets' },
-  { name: 'TicTacToe', description: 'Tic Tac Toe! I wanted to put my newfound abilities to the test by creating a small front-front end game. Javascript and jQuery were used for the logic.', url: 'http://playttt.bitballoon.com', codeUrl: 'https://github.com/truotaku/tictactoe' }
+  { name: 'TicTacToe', description: 'Tic Tac Toe! I wanted to put my newfound abilities to the test by creating a small front-end game. Javascript and jQuery were used for the logic.', url: 'http://playttt.bitballoon.com', codeUrl: 'https://github.com/truotaku/tictactoe' }
 ];
 
 
